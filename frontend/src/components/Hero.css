@@ -1,0 +1,108 @@
+.hero {
+  min-height: calc(100vh - 80px);
+  padding: 80px 7%;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 900px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-label {
+  margin-bottom: 25px;
+
+  font-size: 12px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  opacity: 0.65;
+}
+
+.hero h1 {
+  margin: 0;
+
+  font-size: clamp(70px, 10vw, 150px);
+  line-height: 0.85;
+  letter-spacing: -6px;
+  font-weight: 600;
+}
+
+.hero-description {
+  margin: 45px auto 30px;
+
+  max-width: 430px;
+
+  font-size: 18px;
+  line-height: 1.6;
+  opacity: 0.65;
+}
+
+.hero-button {
+  padding: 15px 28px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 40px;
+
+  background: transparent;
+  color: white;
+
+  font-size: 12px;
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background: white;
+  color: #111;
+  transform: translateY(-3px);
+}
+
+/* Decorative element */
+
+.hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  z-index: 0;
+}
+
+.hero::after {
+  content: "L";
+  
+  position: absolute;
+
+  font-size: 420px;
+  font-weight: 700;
+
+  opacity: 0.025;
+
+  right: -40px;
+  bottom: -140px;
+
+  z-index: 0;
+}

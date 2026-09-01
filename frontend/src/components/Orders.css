@@ -1,0 +1,561 @@
+/* =====================================================
+   ORDERS PAGE
+===================================================== */
+
+.orders-page {
+    min-height: 100vh;
+
+    padding: 110px 7%;
+
+    background: #f8f7f4;
+
+    color: #171717;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   PAGE HEADING
+===================================================== */
+
+.orders-heading {
+    margin-bottom: 60px;
+}
+
+.orders-label {
+    margin: 0 0 15px;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+
+    color: #667085;
+
+    text-transform: uppercase;
+}
+
+.orders-heading h1 {
+    margin: 0;
+
+    font-size: clamp(
+        48px,
+        6vw,
+        72px
+    );
+
+    line-height: 0.95;
+
+    font-weight: 400;
+
+    letter-spacing: -3px;
+}
+
+
+/* =====================================================
+   EMPTY / ERROR
+===================================================== */
+
+.empty-orders {
+    min-height: 260px;
+
+    padding: 60px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3e0db;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+.empty-orders p {
+    margin: 0;
+
+    font-size: 15px;
+
+    color: #667085;
+}
+
+
+/* =====================================================
+   ORDERS LIST
+===================================================== */
+
+.orders-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 35px;
+}
+
+
+/* =====================================================
+   ORDER CARD
+===================================================== */
+
+.order-card {
+    padding: 38px;
+
+    background: #ffffff;
+
+    border: 1px solid #e1ded9;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   ORDER HEADER
+===================================================== */
+
+.order-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding-bottom: 28px;
+
+    border-bottom: 1px solid #e5e2dd;
+}
+
+.order-number-label {
+    margin: 0 0 8px;
+
+    font-size: 10px;
+
+    letter-spacing: 1.7px;
+
+    color: #667085;
+}
+
+.order-header h2 {
+    margin: 0 0 13px;
+
+    font-size: 21px;
+
+    font-weight: 400;
+
+    letter-spacing: -0.5px;
+
+    color: #171717;
+
+    word-break: break-all;
+}
+
+.order-status {
+    display: inline-block;
+
+    padding: 6px 11px;
+
+    border: 1px solid #d8d5cf;
+
+    font-size: 10px;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+
+    color: #555;
+}
+
+.order-date {
+    margin: 0;
+
+    padding-top: 3px;
+
+    font-size: 13px;
+
+    color: #777;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   PRODUCTS
+===================================================== */
+
+.order-products {
+    width: 100%;
+}
+
+
+/* =====================================================
+   PRODUCT ITEM
+===================================================== */
+
+.order-item {
+    display: grid;
+
+    grid-template-columns:
+        180px
+        1fr
+        auto;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid #e5e2dd;
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.order-image-wrapper {
+    width: 180px;
+
+    height: 180px;
+
+    background: #f1efeb;
+
+    overflow: hidden;
+
+    flex-shrink: 0;
+}
+
+.order-item-image {
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.order-image-placeholder {
+    width: 100%;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    color: #999;
+}
+
+
+/* =====================================================
+   PRODUCT INFORMATION
+===================================================== */
+
+.order-item-info {
+    align-self: center;
+}
+
+.order-item-category {
+    margin: 0 0 10px;
+
+    font-size: 9px;
+
+    letter-spacing: 1.7px;
+
+    color: #667085;
+}
+
+.order-item-info h3 {
+    margin: 0 0 18px;
+
+    font-size: 23px;
+
+    font-weight: 400;
+
+    letter-spacing: -0.5px;
+
+    color: #171717;
+}
+
+.order-item-info p {
+    margin: 0 0 8px;
+
+    font-size: 14px;
+
+    color: #666;
+}
+
+
+/* =====================================================
+   PRODUCT PRICE
+===================================================== */
+
+.order-item-price {
+    margin: 0;
+
+    align-self: center;
+
+    font-size: 16px;
+
+    color: #171717;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   SHIPPING DETAILS
+===================================================== */
+
+.shipping-details {
+    padding: 32px 0;
+
+    border-bottom: 1px solid #e5e2dd;
+}
+
+.shipping-label {
+    margin: 0 0 25px;
+
+    font-size: 10px;
+
+    letter-spacing: 1.7px;
+
+    color: #667085;
+}
+
+.shipping-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    column-gap: 50px;
+
+    row-gap: 22px;
+}
+
+.shipping-grid span {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 9px;
+
+    letter-spacing: 1.4px;
+
+    color: #999;
+}
+
+.shipping-grid p {
+    margin: 0;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+
+    color: #444;
+}
+
+
+/* =====================================================
+   ORDER FOOTER
+===================================================== */
+
+.order-footer {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-top: 28px;
+}
+
+.order-footer span {
+    font-size: 10px;
+
+    letter-spacing: 1.7px;
+
+    color: #667085;
+}
+
+.order-footer strong {
+    font-size: 19px;
+
+    font-weight: 500;
+
+    color: #171717;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .orders-page {
+        padding: 85px 5%;
+    }
+
+    .orders-heading {
+        margin-bottom: 45px;
+    }
+
+    .order-card {
+        padding: 28px;
+    }
+
+    .order-item {
+        grid-template-columns:
+            150px
+            1fr
+            auto;
+
+        gap: 25px;
+    }
+
+    .order-image-wrapper {
+        width: 150px;
+
+        height: 150px;
+    }
+
+    .order-item-info h3 {
+        font-size: 21px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .orders-page {
+        padding: 65px 5%;
+    }
+
+    .orders-heading {
+        margin-bottom: 40px;
+    }
+
+    .orders-heading h1 {
+        font-size: 45px;
+
+        letter-spacing: -2px;
+    }
+
+    .order-card {
+        padding: 20px;
+    }
+
+
+    /* ORDER HEADER */
+
+    .order-header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .order-date {
+        padding-top: 0;
+    }
+
+
+    /* PRODUCT */
+
+    .order-item {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 18px;
+
+        padding: 25px 0;
+    }
+
+    .order-image-wrapper {
+        width: 100%;
+
+        height: auto;
+
+        aspect-ratio: 1 / 1;
+    }
+
+    .order-item-info h3 {
+        font-size: 21px;
+
+        margin-bottom: 14px;
+    }
+
+    .order-item-price {
+        font-size: 16px;
+    }
+
+
+    /* SHIPPING */
+
+    .shipping-details {
+        padding: 25px 0;
+    }
+
+    .shipping-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    /* FOOTER */
+
+    .order-footer {
+        padding-top: 25px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .orders-page {
+        padding-left: 4%;
+
+        padding-right: 4%;
+    }
+
+    .order-card {
+        padding: 17px;
+    }
+
+    .orders-heading h1 {
+        font-size: 40px;
+    }
+
+    .order-item-info h3 {
+        font-size: 19px;
+    }
+
+}

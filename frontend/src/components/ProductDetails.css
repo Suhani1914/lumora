@@ -1,0 +1,444 @@
+/* =========================================
+   PRODUCT DETAILS PAGE
+========================================= */
+
+.product-details-page {
+  min-height: calc(100vh - 80px);
+  background: #f8f7f3;
+  color: #171717;
+}
+
+
+/* =========================================
+   PRODUCT DETAILS
+========================================= */
+
+.product-details {
+  min-height: calc(100vh - 80px);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 0;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.product-details-image {
+  position: relative;
+
+  width: 100%;
+  height: calc(100vh - 80px);
+
+  overflow: hidden;
+
+  background: #e9e6df;
+}
+
+.product-details-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.product-new-badge {
+  position: absolute;
+
+  top: 25px;
+  left: 25px;
+
+  padding: 8px 12px;
+
+  background: #171717;
+  color: #ffffff;
+
+  font-size: 10px;
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================
+   INFORMATION
+========================================= */
+
+.product-details-info {
+  padding: 100px 9%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  background: #f8f7f3;
+}
+
+.product-details-category {
+  margin: 0 0 20px;
+
+  font-size: 11px;
+  letter-spacing: 2px;
+
+  color: #667085;
+
+  text-transform: uppercase;
+}
+
+.product-details-info h1 {
+  margin: 0 0 25px;
+
+  max-width: 600px;
+
+  font-size: clamp(
+    50px,
+    5vw,
+    82px
+  );
+
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  letter-spacing: -3px;
+}
+
+.product-details-price {
+  margin: 0 0 45px;
+
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.product-details-description {
+  max-width: 520px;
+
+  margin: 0 0 50px;
+
+  font-size: 14px;
+  line-height: 1.9;
+
+  color: #667085;
+}
+
+
+/* =========================================
+   SIZE
+========================================= */
+
+.size-section {
+  margin-bottom: 35px;
+}
+
+.size-label {
+  margin: 0 0 15px;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #667085;
+
+  text-transform: uppercase;
+}
+
+.size-options {
+  display: flex;
+
+  gap: 10px;
+}
+
+.size-button {
+  width: 70px;
+  height: 60px;
+
+  border: 1px solid #d5d2cb;
+
+  background: transparent;
+
+  color: #171717;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.size-button:hover {
+  border-color: #171717;
+}
+
+.size-button.active {
+  background: #171717;
+
+  border-color: #171717;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   ADD TO BAG
+========================================= */
+
+.add-to-bag-button {
+  width: 100%;
+
+  min-height: 70px;
+
+  border: 1px solid #171717;
+
+  background: #171717;
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.add-to-bag-button:hover {
+  background: transparent;
+
+  color: #171717;
+}
+
+
+/* =========================================
+   LOADING
+========================================= */
+
+.product-loading {
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+
+  color: #667085;
+}
+
+
+/* =========================================
+   PRODUCT NOT FOUND
+========================================= */
+
+.product-not-found {
+  min-height: calc(100vh - 80px);
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.product-not-found h2 {
+  margin: 0 0 25px;
+
+  font-size: 32px;
+
+  font-weight: 400;
+}
+
+.product-not-found button {
+  padding: 15px 25px;
+
+  border: 1px solid #171717;
+
+  background: transparent;
+
+  color: #171717;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  cursor: pointer;
+}
+
+
+/* =========================================
+   LUMORA TOAST
+========================================= */
+
+.lumora-toast {
+  position: fixed;
+
+  right: 30px;
+  bottom: 30px;
+
+  z-index: 9999;
+
+  min-width: 320px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 18px 22px;
+
+  background: #171717;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 12px 35px
+    rgba(0, 0, 0, 0.18);
+
+  animation:
+    toast-slide-in
+    0.3s ease forwards;
+}
+
+.toast-icon {
+  width: 30px;
+  height: 30px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 13px;
+}
+
+.toast-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.toast-content strong {
+  font-size: 10px;
+
+  font-weight: 500;
+
+  letter-spacing: 1.5px;
+}
+
+.toast-content p {
+  margin: 0;
+
+  font-size: 12px;
+
+  color: #d0d0d0;
+}
+
+
+/* =========================================
+   TOAST ANIMATION
+========================================= */
+
+@keyframes toast-slide-in {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .product-details {
+    grid-template-columns: 1fr;
+  }
+
+  .product-details-image {
+    height: 65vh;
+  }
+
+  .product-details-info {
+    padding: 70px 7%;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .product-details-image {
+    height: 55vh;
+  }
+
+  .product-details-info {
+    padding: 55px 5%;
+  }
+
+  .product-details-info h1 {
+    font-size: 48px;
+
+    letter-spacing: -2px;
+  }
+
+  .product-details-description {
+    font-size: 13px;
+
+    margin-bottom: 40px;
+  }
+
+  .size-button {
+    width: 60px;
+    height: 55px;
+  }
+
+  .add-to-bag-button {
+    min-height: 65px;
+  }
+
+  .lumora-toast {
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+
+    min-width: auto;
+  }
+
+}

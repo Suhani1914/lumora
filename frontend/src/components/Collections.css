@@ -1,0 +1,621 @@
+/* =========================================================
+   COLLECTIONS PAGE
+   ========================================================= */
+
+.collections-page {
+  min-height: 100vh;
+  background: #f4f1eb;
+  color: #171717;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.collections-hero {
+  min-height: 55vh;
+  padding: 100px 7%;
+  display: flex;
+  align-items: center;
+  background: #f4f1eb;
+}
+
+.collections-hero-text {
+  max-width: 800px;
+}
+
+.collections-label,
+.collections-small-label {
+  margin: 0 0 15px;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.collections-hero h1 {
+  margin: 0 0 30px;
+  color: #171717;
+  font-size: clamp(56px, 8vw, 105px);
+  line-height: 0.9;
+  font-weight: 400;
+  letter-spacing: -4px;
+}
+
+.collections-intro {
+  max-width: 600px;
+  margin: 0;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   COLLECTION SECTION
+   ========================================================= */
+
+.collections-section {
+  padding: 100px 7% 120px;
+  background: #ffffff;
+}
+
+.collections-section-header {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 40px;
+}
+
+.collections-section-header h2 {
+  margin: 0;
+
+  color: #171717;
+
+  font-size: clamp(42px, 5vw, 68px);
+
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  letter-spacing: -3px;
+}
+
+.collections-header-description {
+  max-width: 350px;
+
+  margin: 0;
+
+  color: #666;
+
+  font-size: 13px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   COLLECTION GRID
+   ========================================================= */
+
+.collections-grid {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 55px 30px;
+}
+
+
+/* =========================================================
+   COLLECTION CARD
+   ========================================================= */
+
+.collection-card {
+  background: #f4f1eb;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   IMAGE LINK
+   ========================================================= */
+
+.collection-image-link {
+  display: block;
+
+  text-decoration: none;
+
+  color: inherit;
+}
+
+
+/* =========================================================
+   COLLECTION IMAGE
+   ========================================================= */
+
+.collection-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 430px;
+
+  overflow: hidden;
+
+  background: #e7e2da;
+}
+
+.collection-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.6s ease;
+}
+
+.collection-card:hover
+.collection-image img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================================
+   NEW LABEL
+   ========================================================= */
+
+.collection-product-new {
+  position: absolute;
+
+  top: 18px;
+  left: 18px;
+
+  padding: 9px 13px;
+
+  background: #ffffff;
+
+  color: #171717;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.collection-overlay {
+  position: absolute;
+
+  left: 20px;
+  bottom: 20px;
+
+  padding: 10px 15px;
+
+  background: rgba(255, 255, 255, 0.95);
+
+  color: #171717;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.collection-card:hover
+.collection-overlay {
+  background: #171717;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.collection-card-content {
+  padding: 26px 28px 30px;
+}
+
+.collection-category {
+  margin: 0 0 9px;
+
+  color: #777;
+
+  font-size: 9px;
+
+  letter-spacing: 1.8px;
+}
+
+.collection-card-content h3 {
+  margin: 0 0 13px;
+
+  color: #171717;
+
+  font-size: 30px;
+
+  font-weight: 400;
+
+  letter-spacing: -0.5px;
+}
+
+.collection-description {
+  max-width: 450px;
+
+  margin: 0 0 24px;
+
+  color: #666;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   COLLECTION LINK
+   ========================================================= */
+
+.collection-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  color: #171717;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  border-bottom: 1px solid #171717;
+
+  padding-bottom: 7px;
+
+  transition:
+    gap 0.2s ease,
+    color 0.2s ease;
+}
+
+.collection-link span {
+  font-size: 14px;
+}
+
+.collection-link:hover {
+  gap: 21px;
+
+  color: #666;
+}
+
+
+/* =========================================================
+   EVERYDAY ESSENTIALS
+   ========================================================= */
+
+.essentials-section {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 110px 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+.essentials-image {
+  width: 100%;
+
+  height: 500px;
+
+  overflow: hidden;
+
+  background: #e7e2da;
+}
+
+.essentials-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.6s ease;
+}
+
+.essentials-image:hover img {
+  transform: scale(1.04);
+}
+
+.essentials-content {
+  max-width: 500px;
+}
+
+.essentials-content h2 {
+  margin: 0 0 25px;
+
+  color: #171717;
+
+  font-size: clamp(42px, 5vw, 64px);
+
+  line-height: 0.95;
+
+  font-weight: 400;
+
+  letter-spacing: -2.5px;
+}
+
+.essentials-content > p:not(.collections-small-label) {
+  margin: 0 0 35px;
+
+  color: #666;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   ESSENTIALS BUTTON
+   ========================================================= */
+
+.essentials-button {
+  display: inline-block;
+
+  padding: 15px 24px;
+
+  background: #ffffff;
+
+  color: #171717;
+
+  border: 1px solid #171717;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.essentials-button:hover {
+  background: #171717;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.collections-cta {
+  padding: 110px 7%;
+
+  text-align: center;
+
+  background: #ffffff;
+}
+
+.collections-cta h2 {
+  margin: 0 0 35px;
+
+  color: #171717;
+
+  font-size: clamp(48px, 6vw, 80px);
+
+  line-height: 0.9;
+
+  font-weight: 400;
+
+  letter-spacing: -3px;
+}
+
+.collections-cta-button {
+  display: inline-block;
+
+  padding: 16px 28px;
+
+  background: #ffffff;
+
+  color: #171717;
+
+  border: 1px solid #171717;
+
+  text-decoration: none;
+
+  font-size: 10px;
+
+  letter-spacing: 1.5px;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.collections-cta-button:hover {
+  background: #171717;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .collections-hero {
+    min-height: 50vh;
+
+    padding: 90px 6%;
+  }
+
+  .collections-section {
+    padding: 80px 6% 100px;
+  }
+
+  .collections-grid {
+    gap: 40px 20px;
+  }
+
+  .collection-image {
+    height: 360px;
+  }
+
+  .collection-card-content {
+    padding: 23px;
+  }
+
+  .essentials-section {
+    padding: 90px 6%;
+
+    gap: 50px;
+  }
+
+  .essentials-image {
+    height: 430px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .collections-hero {
+    min-height: 50vh;
+
+    padding: 75px 5%;
+  }
+
+  .collections-hero h1 {
+    font-size: 55px;
+
+    letter-spacing: -2.5px;
+  }
+
+  .collections-intro {
+    font-size: 14px;
+  }
+
+
+  .collections-section {
+    padding: 65px 5% 80px;
+  }
+
+
+  .collections-section-header {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 25px;
+
+    margin-bottom: 45px;
+  }
+
+  .collections-section-header h2 {
+    font-size: 45px;
+  }
+
+
+  /* ONE COLUMN ON MOBILE */
+
+  .collections-grid {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+
+  .collection-image {
+    height: 420px;
+  }
+
+  .collection-card-content {
+    padding: 23px;
+  }
+
+  .collection-card-content h3 {
+    font-size: 27px;
+  }
+
+
+  /* ESSENTIALS */
+
+  .essentials-section {
+    padding: 70px 5%;
+
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .essentials-image {
+    height: 400px;
+  }
+
+  .essentials-content h2 {
+    font-size: 46px;
+  }
+
+
+  /* CTA */
+
+  .collections-cta {
+    padding: 75px 5%;
+  }
+
+  .collections-cta h2 {
+    font-size: 50px;
+  }
+}

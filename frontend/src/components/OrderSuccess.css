@@ -1,0 +1,258 @@
+/* ================================
+   ORDER SUCCESS PAGE
+================================ */
+
+.order-success-page {
+    min-height: 80vh;
+    padding: 90px 6%;
+
+    background: #f8f7f3;
+    color: #111;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+}
+
+/* ================================
+   SUCCESS CONTENT
+================================ */
+
+.order-success-content {
+    width: 100%;
+    max-width: 900px;
+
+    padding: 55px 60px;
+
+    background: #ffffff;
+
+    border: 1px solid #ebe7df;
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+/* ================================
+   BRAND
+================================ */
+
+.success-brand {
+    margin: 0 0 35px;
+
+    color: #8a8176;
+
+    font-size: 11px;
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+}
+
+/* ================================
+   SUCCESS ICON
+================================ */
+
+.success-icon {
+    width: 72px;
+    height: 72px;
+
+    margin: 0 auto 30px;
+
+    border: 1px solid #cfc8bd;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #111;
+
+    font-size: 32px;
+    font-weight: 300;
+}
+
+/* ================================
+   LABEL
+================================ */
+
+.success-label {
+    margin: 0 0 12px;
+
+    color: #8a8176;
+
+    font-size: 10px;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+/* ================================
+   MAIN HEADING
+================================ */
+
+.order-success-content h1 {
+    margin: 0 0 15px;
+
+    color: #111;
+
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+/* ================================
+   SUCCESS MESSAGE
+================================ */
+
+.success-message {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 15px;
+}
+
+/* ================================
+   ORDER NUMBER
+================================ */
+
+.order-number-box {
+    width: fit-content;
+    min-width: 190px;
+
+    margin: 35px auto;
+
+    padding: 22px 30px;
+
+    background: #eee9df;
+
+    border: 1px solid #ddd6ca;
+    border-radius: 6px;
+
+    box-sizing: border-box;
+}
+
+.order-number-label {
+    margin: 0 0 8px;
+
+    color: #8a8176;
+
+    font-size: 9px;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+.order-number {
+    color: #111;
+
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* ================================
+   THANK YOU MESSAGE
+================================ */
+
+.success-thank-you {
+    max-width: 600px;
+
+    margin: 0 auto 35px;
+
+    color: #777067;
+
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+
+.success-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.continue-shopping-button,
+.back-home-button {
+    min-width: 190px;
+    padding: 17px 25px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+    color: #111111;
+
+    border: 1px solid #cfc8bd;
+
+    text-decoration: none;
+
+    font-size: 10px;
+    letter-spacing: 1.8px;
+    text-align: center;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* Hover effect for BOTH buttons */
+
+.continue-shopping-button:hover,
+.back-home-button:hover {
+    background: #111111;
+    color: #ffffff;
+    border-color: #111111;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .order-success-page {
+        padding: 60px 5%;
+    }
+
+    .order-success-content {
+        padding: 45px 25px;
+    }
+
+    .success-brand {
+        margin-bottom: 30px;
+    }
+
+    .success-icon {
+        width: 64px;
+        height: 64px;
+
+        font-size: 28px;
+    }
+
+    .order-success-content h1 {
+        font-size: 32px;
+    }
+
+    .success-message {
+        font-size: 14px;
+    }
+
+    .success-actions {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    .continue-shopping-button,
+    .back-home-button {
+        width: 100%;
+    }
+}
