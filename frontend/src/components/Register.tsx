@@ -27,7 +27,7 @@ function Register() {
       // ==============================
 
       const registerResponse = await axios.post(
-        "http://localhost:5000/api/register",
+        "https://lumora-dtb4.onrender.com/api/register",
         {
           name,
           email,
@@ -45,7 +45,7 @@ function Register() {
       // login automatically after registration.
       if (!token) {
         const loginResponse = await axios.post(
-          "http://localhost:5000/api/login",
+          "https://lumora-dtb4.onrender.com/api/login",
           {
             email,
             password,

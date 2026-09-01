@@ -22,7 +22,7 @@ function Collections() {
 
   useEffect(() => {
     axios
-      .get<Product[]>("http://localhost:5000/api/products")
+      .get<Product[]>("https://lumora-dtb4.onrender.com/api/products")
       .then((response) => {
         const formattedProducts = response.data.map((product) => ({
           ...product,

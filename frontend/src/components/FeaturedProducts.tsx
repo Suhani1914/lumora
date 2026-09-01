@@ -17,7 +17,7 @@ function FeaturedProducts() {
 
     useEffect(() => {
         axios
-            .get<Product[]>("http://localhost:5000/api/products")
+            .get<Product[]>("https://lumora-dtb4.onrender.com/api/products")
             .then((response) => {
                 setProducts(
                     response.data.map((product) => ({

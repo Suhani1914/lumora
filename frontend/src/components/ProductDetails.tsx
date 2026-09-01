@@ -56,7 +56,7 @@ function ProductDetails() {
 
         const response =
           await axios.get<Product[]>(
-            "http://localhost:5000/api/products"
+            "https://lumora-dtb4.onrender.com/api/products"
           );
 
         const foundProduct =

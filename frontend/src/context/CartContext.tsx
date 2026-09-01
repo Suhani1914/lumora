@@ -87,7 +87,7 @@ export function CartProvider({
 
     try {
       const response = await axios.get(
-        "http://localhost:5000/api/cart",
+        "https://lumora-dtb4.onrender.com/api/cart",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -169,7 +169,7 @@ export function CartProvider({
 
     try {
       await axios.post(
-        "http://localhost:5000/api/cart",
+        "https://lumora-dtb4.onrender.com/api/cart",
         {
           productId: product.id,
           size,
@@ -227,7 +227,7 @@ export function CartProvider({
 
     try {
       await axios.delete(
-        `http://localhost:5000/api/cart/${productId}/${encodeURIComponent(
+        `https://lumora-dtb4.onrender.com/api/cart/${productId}/${encodeURIComponent(
           size
         )}`,
         {
@@ -264,7 +264,7 @@ export function CartProvider({
 
     try {
       await axios.patch(
-        `http://localhost:5000/api/cart/${productId}/${encodeURIComponent(
+        `https://lumora-dtb4.onrender.com/api/cart/${productId}/${encodeURIComponent(
           size
         )}`,
         {
@@ -301,7 +301,7 @@ export function CartProvider({
 
     try {
       await axios.delete(
-        "http://localhost:5000/api/cart",
+        "https://lumora-dtb4.onrender.com/api/cart",
         {
           headers: {
             Authorization: `Bearer ${token}`,
