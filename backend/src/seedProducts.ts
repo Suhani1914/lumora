@@ -14,7 +14,7 @@ const products = [
         name: "Noir Oversized Jacket",
         category: "JACKETS",
         price: 2499,
-        image: "/src/assets/products/01_women_minimal_bomber.jpg",
+        image: "/products/01_women_minimal_bomber.jpg",
         isNew: true,
     },
     {
@@ -22,7 +22,7 @@ const products = [
         name: "Urban Cropped Jacket",
         category: "JACKETS",
         price: 2799,
-        image: "/src/assets/products/02_women_wool_collar.jpg",
+        image: "/products/02_women_wool_collar.jpg",
         isNew: true,
     },
     {
@@ -30,7 +30,7 @@ const products = [
         name: "Studio Bomber",
         category: "JACKETS",
         price: 3199,
-        image: "/src/assets/products/03_women_cropped_zip.jpg",
+        image: "/products/03_women_cropped_zip.jpg",
         isNew: false,
     },
     {
@@ -38,7 +38,7 @@ const products = [
         name: "Structured Wool Jacket",
         category: "JACKETS",
         price: 3999,
-        image: "/src/assets/products/04_men_classic_bomber.jpg",
+        image: "/products/04_men_classic_bomber.jpg",
         isNew: true,
     },
     {
@@ -46,7 +46,7 @@ const products = [
         name: "Relaxed Utility Jacket",
         category: "JACKETS",
         price: 3499,
-        image: "/src/assets/products/05_men_wool_overshirt.jpg",
+        image: "/products/05_men_wool_overshirt.jpg",
         isNew: false,
     },
     {
@@ -54,7 +54,7 @@ const products = [
         name: "Classic Denim Jacket",
         category: "JACKETS",
         price: 2999,
-        image: "/src/assets/products/06_men_suede_zip.jpg",
+        image: "/products/06_men_suede_zip.jpg",
         isNew: false,
     },
 
@@ -67,7 +67,7 @@ const products = [
         name: "Sculpt Runner",
         category: "FOOTWEAR",
         price: 3499,
-        image: "/src/assets/products/footwear_women_01_classic_white_sneakers.png",
+        image: "/products/footwear_women_01_classic_white_sneakers.png",
         isNew: true,
     },
     {
@@ -75,7 +75,7 @@ const products = [
         name: "Minimal Court Sneaker",
         category: "FOOTWEAR",
         price: 2999,
-        image: "/src/assets/products/footwear_women_02_suede_loafers.png",
+        image: "/products/footwear_women_02_suede_loafers.png",
         isNew: true,
     },
     {
@@ -83,7 +83,7 @@ const products = [
         name: "Street Low-Top",
         category: "FOOTWEAR",
         price: 2699,
-        image: "/src/assets/products/footwear_women_03_leather_runners.png",
+        image: "/products/footwear_women_03_leather_runners.png",
         isNew: false,
     },
     {
@@ -91,7 +91,7 @@ const products = [
         name: "Everyday Trainer",
         category: "FOOTWEAR",
         price: 3299,
-        image: "/src/assets/products/footwear_men_01_classic_black_sneakers.png",
+        image: "/products/footwear_men_01_classic_black_sneakers.png",
         isNew: false,
     },
     {
@@ -99,7 +99,7 @@ const products = [
         name: "Urban Slip-On",
         category: "FOOTWEAR",
         price: 2499,
-        image: "/src/assets/products/footwear_men_02_chelsea_boots.png",
+        image: "/products/footwear_men_02_chelsea_boots.png",
         isNew: true,
     },
     {
@@ -107,7 +107,7 @@ const products = [
         name: "Essential Court Shoe",
         category: "FOOTWEAR",
         price: 3099,
-        image: "/src/assets/products/footwear_men_03_chunky_trail_sneakers.png",
+        image: "/products/footwear_men_03_chunky_trail_sneakers.png",
         isNew: false,
     },
 
@@ -120,7 +120,7 @@ const products = [
         name: "Luna Shoulder Bag",
         category: "BAGS",
         price: 2999,
-        image: "/src/assets/products/bags_women_01_classic_tote.png",
+        image: "/products/bags_women_01_classic_tote.png",
         isNew: false,
     },
     {
@@ -128,7 +128,7 @@ const products = [
         name: "Mono Tote",
         category: "BAGS",
         price: 2499,
-        image: "/src/assets/products/bags_women_02_minimal_shoulder_bag.png",
+        image: "/products/bags_women_02_minimal_shoulder_bag.png",
         isNew: false,
     },
     {
@@ -136,7 +136,7 @@ const products = [
         name: "Mini Crossbody",
         category: "BAGS",
         price: 2199,
-        image: "/src/assets/products/bags_women_03_quilted_crossbody.png",
+        image: "/products/bags_women_03_quilted_crossbody.png",
         isNew: true,
     },
     {
@@ -144,7 +144,7 @@ const products = [
         name: "Everyday Shoulder Bag",
         category: "BAGS",
         price: 2799,
-        image: "/src/assets/products/bags_men_01_classic_backpack.png",
+        image: "/products/bags_men_01_classic_backpack.png",
         isNew: true,
     },
     {
@@ -152,7 +152,7 @@ const products = [
         name: "Structured Mini Bag",
         category: "BAGS",
         price: 2599,
-        image: "/src/assets/products/bags_men_02_leather_weekend_bag.png",
+        image: "/products/bags_men_02_leather_weekend_bag.png",
         isNew: false,
     },
     {
@@ -160,7 +160,7 @@ const products = [
         name: "Minimal Carryall",
         category: "BAGS",
         price: 3199,
-        image: "/src/assets/products/bags_men_03_messenger_bag.png",
+        image: "/products/bags_men_03_messenger_bag.png",
         isNew: false,
     },
 
@@ -173,7 +173,7 @@ const products = [
         name: "Essential Knit",
         category: "KNITWEAR",
         price: 1999,
-        image: "/src/assets/products/knitwear_women_01_ribbed_crewneck_sweater.png",
+        image: "/products/knitwear_women_01_ribbed_crewneck_sweater.png",
         isNew: false,
     },
     {
@@ -181,7 +181,7 @@ const products = [
         name: "Soft Ribbed Sweater",
         category: "KNITWEAR",
         price: 2299,
-        image: "/src/assets/products/knitwear_women_02_v_neck_knit_sweater.png",
+        image: "/products/knitwear_women_02_v_neck_knit_sweater.png",
         isNew: true,
     },
     {
@@ -189,7 +189,7 @@ const products = [
         name: "Oversized Knit Cardigan",
         category: "KNITWEAR",
         price: 2899,
-        image: "/src/assets/products/knitwear_women_03_cropped_knit_cardigan.png",
+        image: "/products/knitwear_women_03_cropped_knit_cardigan.png",
         isNew: false,
     },
     {
@@ -197,7 +197,7 @@ const products = [
         name: "Relaxed Crew Knit",
         category: "KNITWEAR",
         price: 2399,
-        image: "/src/assets/products/knitwear_men_01_waffle_knit_sweater.png",
+        image: "/products/knitwear_men_01_waffle_knit_sweater.png",
         isNew: true,
     },
     {
@@ -205,7 +205,7 @@ const products = [
         name: "Soft Everyday Cardigan",
         category: "KNITWEAR",
         price: 2699,
-        image: "/src/assets/products/knitwear_men_02_half_zip_knit_sweater.png",
+        image: "/products/knitwear_men_02_half_zip_knit_sweater.png",
         isNew: false,
     },
     {
@@ -213,7 +213,7 @@ const products = [
         name: "Minimal Textured Knit",
         category: "KNITWEAR",
         price: 2499,
-        image: "/src/assets/products/knitwear_men_03_turtleneck_knit_sweater.png",
+        image: "/products/knitwear_men_03_turtleneck_knit_sweater.png",
         isNew: false,
     },
 ];

@@ -29,7 +29,7 @@ function CollectionCategory() {
         const formattedProducts = response.data
           .map((product) => ({
             ...product,
-            image: `/src/assets/products/${product.image
+            image: `/products/${product.image
               .split("/")
               .pop()}`,
           }))

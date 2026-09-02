@@ -29,7 +29,7 @@ function Collections() {
 
           // Convert backend image path
           // into frontend asset path
-          image: `/src/assets/products/${product.image
+          image: `/products/${product.image
             .split("/")
             .pop()}`,
         }));

@@ -68,7 +68,7 @@ function ProductDetails() {
         if (foundProduct) {
           setProduct({
             ...foundProduct,
-            image: `/src/assets/products/${foundProduct.image
+            image: `/products/${foundProduct.image
               .split("/")
               .pop()}`,
           });
